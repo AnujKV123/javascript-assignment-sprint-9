@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Login</title>
+</head>
+<body>
+<section class="login">
+	<div class="loginform">
+		<form>
+			<h2>User Register</h2>
+			<div class="email">
+				<label>Email</label>
+				<input type="text" id="email" name="" placeholder="email">
+			</div>
+			<div class="password">
+				<label>Password</label>
+				<input id="pass" type="password" name="" placeholder="password">
+				<span id="alert">wrong password</span>
+				<span id="succes">Login Succesfull.</span>
+			</div>
+			<div class="loginbtn">
+				<input id="submit" type="submit" name="" value="Register">
+			</div>
+			<a class="register" href="login.html">Login</a>
+		</form>
+	</div>
+</section>
+
+
+
+
+<script type="text/javascript">
+
+	
+	const api_url = "https://reqres.in/api/register";
+	document.getElementById("submit").addEventListener("click", function(event){
+		const email = document.getElementById("email").value;
+		const pass = document.getElementById("pass").value;
+ 		 event.preventDefault()
+ 		 if(email==""|| pass==""){
+ 		 	alert("please fill Email And Password");
+ 		 	return false;
+ 		 }
+		getUser(email,pass);
+		
+	});
+	async function getUser(email,pass) {
+		const response = await fetch(api_url, {
+			method: 'POST',
+			headers: {
+			  'Accept': 'application/json',
+			  'Content-Type': 'application/json'
+			},
+			body:JSON.stringify({
+			   email:email,
+			   password:pass,
+			  }),
+			});
+
+			let result = await response.json();
+			  console.log(result);
+			  if(!result.error){
+			  	alert("Register success");
+			  	window.location="login.html";
+			  }else{
+			  	alert(result.error);
+			  }
+		}
+	
+</script>
+</body>
+</html>
+

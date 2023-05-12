@@ -1,0 +1,41 @@
+body{
+    background-image: url(./background.avif);
+}
+.popinsmain{float: left; width: 96%;}
+.contentsection{ float: left;width: 100%;background-image: url(./bg.jpg); background-repeat: repeat-y; padding: 20px;}
+.contenthead {float: left; width: 100%;  padding-bottom :30px;}
+.neworder{float: left;}
+.neworder h2{ float: left; backdrop-filter: blur(20px); box-shadow: 0 0 30px rgba(0, 0, 0, .5); border: none; border-radius: 10px; padding: 10px 30px; color: #fff;}
+.profile{float: left;text-align: right;}
+.profile button{ margin-left: 51em; margin-top: 22px; text-align: right; background: #d61421; padding: 10px 30px; border-radius: 10px; border:none; color: #fff; font-size: 20px;}
+.tab-content .tab-pane{float: left; width: 100%; backdrop-filter: blur(20px); box-shadow: 0 0 30px rgba(250, 6, 213, 0.961); border-radius: 19px;}
+.tabhead{backdrop-filter: blur(20px); box-shadow: 0 0 30px rgba(0, 0, 0, .5); float: left; width: 98.6%; padding: 20px 10px;}
+.tab-heading{float: left; text-align: left; font-size: 36px; color: wheat;}tabhead
+.order_table{float: left;backdrop-filter: blur(20px); width: 97.3%;padding: 20px; color: blueviolet;}
+.order_table table{float: left;width: 100%; border: transparent;}
+.order_table table tr td {padding: 10px; color: #e5ff00; border-top: 1px solid #000000;}
+.order_table table tr td i{ padding: 0 6px;}
+.order_table table tr td .fa-check{color: green;}
+.order_table table tr td .fa-x{color: red;}
+.order_table table tr td img{max-width: 10%; border-radius: 100%; padding: 0 6px;}
+
+
+/*		login page CSS		*/
+
+html{height: 100%;}
+body{margin: 0; height: 100%;}
+.login{float: left; width: 100%; height: 100%;background-image: url(./bg.jpg);}
+.loginform{float: left; width: 30%; position: absolute; padding: 30px; transform: translate(-50% ,-50%); top: 50%; left: 50% ;backdrop-filter: blur(20px); box-shadow: 0 0 30px rgba(0, 0, 0, .5);  border-radius: 14px;}
+.loginform form{float: left; width: 100%;}
+.loginform form h2{float: left; width: 100%; color: #34f503e7;}
+.loginform form .email{float: left; width: 100%;margin: 10px 0 20px 0;}
+.loginform form .email label{float: left; width: 100%; font-size: 18px;padding-bottom: 10px; color: #1200FE;}
+.loginform form .email input{float: left; width: 98%; border-radius: 5px; padding: 8px; font-size: 18px;}
+.loginform form .password{float: left; width: 100%; margin: 10px 0 20px 0;}
+.loginform form .password label{float: left; width: 100%; font-size: 18px; padding-bottom: 10px; color: #1200FE;}
+.loginform form .password input{float: left; width: 98%; border-radius: 5px; padding: 8px; font-size: 18px;}
+.loginform form .loginbtn{width: 100%; text-align: center;}
+.loginform form .loginbtn input{padding: 10px 30px; color: #fff; border: none; background: #1200FE; border-radius: 5px; font-size: 18px;}
+#alert{text-align: center; color: #f00; display: none;}
+#succes{float: left; width: 100%; text-align: center; color: green; display: none;}
+.register{ float: left; border: 2px red; height: 23px; margin-left: 25em ;color: rgb(215, 215, 215); width: 10%; text-align: center;}
